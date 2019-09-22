@@ -6,7 +6,7 @@
 // to SQ elements.
 //
 
-var cornerstoneFileImageLoader = (function ($, cornerstone, cornerstoneFileImageLoader) {
+var cornerstoneFileImageLoader = (function (cornerstone, cornerstoneFileImageLoader) {
 
     "use strict";
 
@@ -125,7 +125,7 @@ var cornerstoneFileImageLoader = (function ($, cornerstone, cornerstoneFileImage
     cornerstone.registerImageLoader('dicomfile', loadImage);
 
     return cornerstoneFileImageLoader;
-}($, cornerstone, cornerstoneFileImageLoader));
+}(cornerstone, cornerstoneFileImageLoader));
 /**
  */
 var cornerstoneFileImageLoader = (function (cornerstoneFileImageLoader) {
