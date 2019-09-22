@@ -61,7 +61,7 @@ var cornerstoneFileImageLoader = (function ($, cornerstone, cornerstoneFileImage
     function loadImage(imageId) {
         // create a deferred object
         // TODO: Consider not using jquery for deferred - maybe cujo's when library
-        var deferred = $.Deferred();
+        var deferred = Promise;
 
         // build a url by parsing out the url scheme and frame index from the imageId
         var url = imageId;
